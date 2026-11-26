@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2026-11-25</title>
+    <meta name="description" content="Subgeode's Website" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>2026-11-25</h1>
+      <p>Climb</p>
+      <video width="1080" height="814" controls loop>
+        <source src="../art-images/2026-11-25-climb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        <img src="../art-images/2026-11-25-thumbnail.png" alt="Climb Thumbnail">"
+      </video>
+      <p><pre>
+        1080 x 814 px
+        60 fps
+        00:27 mm:ss
+        H.264
+        mp4
+
+
+        Filming
+        I used an iPhone to film myself performing a pole climb on both sides. I cropped the footage and imported it into TouchDesigner.
+
+
+        TouchDesigner
+        I sped up the video and set a loop crossfade. I connected an Info CHOP to find the total number of frames which I then set the timeline to match. I cued the file on the first frame of the timeline.
+
+        I connected two Level TOPs to get the black level, brightness, gamma, and contrast where I wanted.
+
+        I connected an HSV Adjust TOP to modify the hue offset. I used a Timeline CHOP and Math CHOP to create a reference number that perfectly loops the hue.
+
+        I added a Feedback TOP, Level TOP, and Composite TOP to create a smoky trail effect.
+
+        I ended with a Movie File Out TOP to export as a Motion JPEG at 60 FPS.
+
+
+        FFMPEG
+        To reduce file size while retaining as much quality as possible I converted the exported movie into .mp4 using H.264.
+      </pre></p>
+    </main>
+  </body>
+</html>
