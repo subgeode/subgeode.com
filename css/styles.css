@@ -20,3 +20,10 @@ h1 {
 p {
   text-align: center;
 }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* Optional: prevents large images from filling the whole width */
+}
